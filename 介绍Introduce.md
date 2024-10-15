@@ -22,6 +22,14 @@ tesseract-ocr-w64-setup-5.4.0.20240606.exe （64 位）
 这个咋办？下面网站直接解决
 [屏幕坐标定位器网页](https://zhangweixi.cc/static/windows-xy.html)
 
-然后打开你的终端安装一下第三方库
+然后打开你的终端安装一下第三方库，
+keyboard（监听键盘操作，这个用来终止程序的，如果方便其他方式终止，可以把这个库及其代码去掉）
+pillow（图像处理库，会用它的ImageGrab来截图）（即调用时导入的PIL）
+pyautogui(自动化键鼠操作)
+OpenCV(计算机视觉与机器学习，会用到其中的cv2)
+pytesseract（ocr识别）
+比如这样pip install keyboard
+安装完成后开始编写我们的程序
+python文件含具体注释已放于目录，我们另行教学
 
 
