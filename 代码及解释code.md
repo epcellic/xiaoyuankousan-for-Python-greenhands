@@ -1,4 +1,4 @@
-没想到上传本地文件稍有麻烦，我就先放文本代码在这里了，稍后我会配置git和ssh后加入py文件，希望对你有帮助。
+#没想到上传本地文件稍有麻烦，我就先放文本代码在这里了，稍后我会配置git和ssh后加入py文件，希望对你有帮助。
 记得用代码格式看，不然可太乱了
 
 import math
@@ -9,7 +9,7 @@ import pyautogui  # 用于模拟鼠标和键盘操作
 import cv2  # OpenCV库，用于图像处理
 import pytesseract  # 用于OCR文字识别
 
-# 设置tesseract的路径，确保你的系统中安装了tesseract，并且路径正确
+    # 设置tesseract的路径，确保你的系统中安装了tesseract，并且路径正确
 pytesseract.pytesseract.tesseract_cmd = r'D:\tesseract\tesseract.exe'
 
 while True:
