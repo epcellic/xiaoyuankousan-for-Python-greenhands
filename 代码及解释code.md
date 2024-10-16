@@ -8,19 +8,14 @@ from PIL import ImageGrab  # 用于捕捉屏幕图像
 import pyautogui  # 用于模拟鼠标和键盘操作
 import cv2  # OpenCV库，用于图像处理
 import pytesseract  # 用于OCR文字识别
-
     # 设置tesseract的路径，确保你的系统中安装了tesseract，并且路径正确
 pytesseract.pytesseract.tesseract_cmd = r'D:\tesseract\tesseract.exe'
-
 while True:
     # 检测是否按下了空格键，如果按下则退出程序
     if keyboard.is_pressed('space'):
         print('识别结束')
         sys.exit()
-
-    # 使用ImageGrab捕捉屏幕的特定区域，bbox参数定义了捕捉区域的左上角和右下角的坐标
-    ImageGrab.grab(bbox=(209,472,650,574)).save('num.png')
-
+    # 使用ImageGrab捕捉屏幕的特定区域，bbox参数定义了捕捉区域的左上角和右下角的坐标   ImageGrab.grab(bbox=(209,472,650,574)).save('num.png')
     # 使用OpenCV读取刚才保存的图像文件
     img = cv2.imread('num.png')
     # 将图像转换为灰度图，这有助于后续的二值化处理
