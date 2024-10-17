@@ -15,7 +15,8 @@ while True:
     if keyboard.is_pressed('space'):
         print('识别结束')
         sys.exit()
-    # 使用ImageGrab捕捉屏幕的特定区域，bbox参数定义了捕捉区域的左上角和右下角的坐标   ImageGrab.grab(bbox=(209,472,650,574)).save('num.png')
+    # 使用ImageGrab捕捉屏幕的特定区域，bbox参数定义了捕捉区域的左上角和右下角的坐标   
+    ImageGrab.grab(bbox=(209,472,650,574)).save('num.png')
     # 使用OpenCV读取刚才保存的图像文件
     img = cv2.imread('num.png')
     # 将图像转换为灰度图，这有助于后续的二值化处理
